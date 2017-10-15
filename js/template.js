@@ -2,7 +2,13 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('images/banner.jpg');
+		$(".banner-image").backstretch([
+			  "images/banner.jpg",
+			  "images/banner-1.jpg",
+			  "images/bg-image-1.jpg"], {
+				fade: 750,
+				duration: 4000
+			});
 		
 		// Fixed header
 		//-----------------------------------------------
